@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive-style.css">
+
+</head>
+
+<body>
+    <!-- modal button start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="modal-button">
+                    <button class="btn btn-danger m-3 p-2 shadow text-white" data-bs-toggle="modal" data-bs-target="#adm-modal">Open
+                        Modal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal button end -->
+
+    <!-- modal start -->
+    <div class="modal" id="adm-modal">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="head part  ">
+                    <div class="header d-flex justify-content-between">
+                        <div class="user-icon d-flex">
+                            <a href="assets/images/male.svg"><img src="assets/images/male.svg"></a>
+                            <div class="patient-name ps-2">
+                                <h6 class="patient-name pt-3">ETHAN WONG</h6>
+                                <p>Male,60 yrs (Senior Citizens)</p>
+                            </div>
+                        </div>
+                        <div class="resident">
+                            <h6 class="ps-3 pt-2">Resident</h6>
+                            <h5 class="bg-white me-2 rounded-1">Malaysia</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <div class="patient-information "> -->
+                        <div class="row">
+                            <div class="patient-div me-2">
+                                <div class="patient-info  d-flex justify-content-between">
+                                    <p class="title">Patient Id</p>
+                                    <img src="assets/images/vector.svg" class="m-1">
+                                </div>
+                                <p class="id">5321344</p>
+                            </div>
+                            <div class="patient-div me-2">
+                                <div class="patient-info  d-flex justify-content-between">
+                                    <p class="title">Visit Id</p>
+                                    <img src="assets/images/visit-id.svg" class="m-1">
+                                </div>
+                                <p class="id">2735678</p>
+                            </div>
+                            <div class="patient-div ">
+                                <div class="patient-info d-flex justify-content-between">
+                                    <p class="title">Ward </p>
+                                    <img src="assets/images/Ward.svg" class="m-1">
+                                </div>
+                                <p class="id">Ward 2A</p>
+                            </div>
+                        </div>
+                        <div class="row2 ">
+                            <div class="info d-flex">
+                                <div class="bed-info">
+                                    <div class="bed d-flex justify-content-between">
+                                        <p class="title">Bed(F5-102)</p>
+                                        <img src="assets/images/color-bed.svg" class="m-1">
+                                    </div>
+                                    <p class="id">Single Bed</p>
+                                </div>
+                                <div class="payor-info">
+                                    <div class="payor d-flex justify-content-between">
+                                        <p class="title">Payor</p>
+                                        <img src="assets/images/umbrella.svg" class="m-1">
+                                    </div>
+                                    <p class="id">Aai bhd (Individuals)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <!-- admission journey start -->
+                <div class="Admn-journey bg-light">
+                    <div class="row admn-info">
+                        <div class="admission-info d-flex justify-content-between">
+                            <div class="heading">
+                                <p>Admission Journey</p>
+                            </div>
+                            <div class="time  ">
+                                <span class="title">Elapsed Time</span>
+                                <span class="times">02:45</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="admission-process list-unstyled ">
+                            <li class="correct-symbol d-flex justify-content-center pt-4">
+                                <div class="icon me-2" id="correct-sign">
+                                    <img src="assets/images/correct-sign.svg" class="img-fluid">
+                                </div>
+                                <div class="admn-request-title pe-2">
+                                    <h6>Admission Request</h6>
+                                    <div id="doctors-image">
+                                        <img src="assets/images/healthicons_doctor.svg"><span class="ps-1">Ratha
+                                            AP</span>
+                                    </div>
+                                </div>
+                                <div class="admn-request-date">
+                                    <p>Dec 06 2021 08:36 AM</p>
+                                </div>
+                            <li>
+                                <p class="request-time  ">00:24</p>
+                            </li>
+                            </li>
+                            <li class="correct-symbol d-flex justify-content-center">
+                                <div class="icon  me-2 ms-md-3 ms-2" id="correct-sign">
+                                    <img src="assets/images/correct-sign.svg" class="img-fluid">
+                                </div>
+                                <div class="admn-request-title pe-2">
+                                    <h6>Sent for IGL Approval</h6>
+                                    <div id="doctors-image">
+                                        <img src="assets/images/healthicons_doctor.svg"><span class="ps-1">Jim
+                                            Chin</span>
+                                    </div>
+                                </div>
+                                <div class="admn-request-date">
+                                    <p>Dec 06 2021 09:00 AM</p>
+                                </div>
+                            <li>
+                                <p class="request-time  ">02:23</p>
+                            </li>
+                            </li>
+                            <li class="correct-symbol d-flex justify-content-center">
+                                <div class="icon  me-2  margin-lefts1 " id="correct-sign">
+                                    <img src="assets/images/correct-sign.svg" class="img-fluid">
+                                </div>
+                                <div class="admn-request-title pe-2">
+                                    <h6>Received IGL Approval</h6>
+                                    <div id="doctors-image">
+                                        <img src="assets/images/healthicons_doctor.svg"><span class="ps-1">Jim
+                                            Chin</span>
+                                    </div>
+                                </div>
+                                <div class="admn-request-date">
+                                    <p>Dec 06 2021 11:23 AM</p>
+                                </div>
+                            <li>
+                                <p class="request-time  ">00:15</p>
+                            </li>
+                            </li>
+                            <li class="correct-symbol d-flex justify-content-center">
+                                <div class="icon  me-2 margin-lefts2" id="correct-sign">
+                                    <img src="assets/images/correct-sign.svg" class="img-fluid">
+                                </div>
+                                <div class="admn-request-title pe-2">
+                                    <h6>Requested Bed Configuration</h6>
+                                    <div id="doctors-image" class="doctors-image">
+                                        <img src="assets/images/healthicons_doctor.svg"><span class="ps-1">Jim
+                                            Chin</span>
+                                    </div>
+                                </div>
+                                <div class="admn-request-date">
+                                    <p>Dec 06 2021 11:38 AM</p>
+                                </div>
+                            </li>
+                            <li class="d-flex req-admitted">
+                                <div class="icons  me-2   py-md-1 px-md-2   py-1 px-2 rounded-circle bg-white">
+                                    <img src="assets/images/bed.svg" class="img-fluid">
+                                </div>
+                                <div class="admn-request-title pt-2 ">
+                                    <h6>Admitted</h6>
+                                </div>
+                            </li>
+                            <li class="req-accepted d-flex ">
+                                <div class="icons  me-2 py-1 px-2 rounded-circle  ">
+                                    <img src="assets/images/fa-solid_bed.svg" class="img-fluid">
+                                </div>
+                                <div class="admn-request-title pt-2">
+                                    <h6>Accepted</h6>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- admission journey end-->
+                    </div>
+                </div>
+            </div>
+            <!-- admission journey end   -->
+            <!-- modal end -->
+            <!-- js cdn links -->
+            <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 75px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    --bs-modal-width: 383px;
+    --bs-modal-height: 605px;
+    --bs-modal-padding: 0.3rem;
+}
+/* header start */
+#adm-modal .header {
+    background: linear-gradient(270.04deg, #FFFAE0 0.03%, rgba(240, 255, 246, 0) 99.96%), #FFC0C0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.modal .user-icon img {
+    width: 24px;
+    height: 24px;
+    margin: 13px 2px 6px 14px;
+    cursor: pointer;
+}
+
+.modal .user-icon img:hover {
+    transform: scale(1.1);
+}
+
+#adm-modal .patient-name h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #00252F;
+    text-transform: uppercase;
+    padding-top: 14px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+#adm-modal .patient-name p {
+    padding-top: 2px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 5px;
+
+    color: rgba(0, 37, 47, 0.56);
+}
+
+#adm-modal .resident h6 {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 9px;
+}
+
+#adm-modal .resident h5 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 9.5px;
+    color: #666666;
+}
+
+/* header end */
+.patient-div {
+    width: 117px;
+    height: 41px;
+    transition: all 0.5s ease-in-out;
+}
+
+.patient-div .patient-info {
+    height: 21px;
+    width: 117px;
+
+}
+
+#adm-modal .bed-info,
+#adm-modal .payor-info {
+    width: 170px;
+    height: 41px;
+    margin: 7px 5px 7px 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+#adm-modal .patient-div:hover,
+#adm-modal .bed-info:hover,
+#adm-modal .payor-info:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.patient-div .title,
+#adm-modal .bed-info .title,
+#adm-modal .payor-info .title {
+    font-weight: 400;
+    font-size: 10px;
+    color: #AAAAAA;
+    padding-left: 8px;
+    padding-top: 5px;
+
+}
+
+.patient-div img {
+    height: 8px;
+    width: 10px;
+}
+
+#adm-modal .patient-div .id {
+    height: 20px;
+    width: 117px;
+    background: #FFF6EF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 2px 0px #0000001A;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+    padding-left: 8px;
+    padding-top: 3px;
+    opacity: 0.9;
+}
+
+#adm-modal .bed,
+#adm-modal .payor {
+    height: 21px;
+    width: 170px;
+
+}
+
+#adm-modal .bed-info .id,
+#adm-modal .payor-info .id {
+    font-size: 12px;
+    height: 20px;
+    width: 170px;
+    background: #FFF6EF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    color: #666666;
+    padding-left: 8px;
+    padding-top: 3px;
+    opacity: 0.9;
+
+}
+
+#adm-modal .payor-info .id {
+    text-transform: uppercase;
+}
+
+#adm-modal .patient-info img:hover,
+#adm-modal .bed-info img:hover,
+#adm-modal .payor-info img:hover {
+    transform: scale(1.5);
+}
+
+/* admission journey start */
+#adm-modal .Admn-journey {
+    border-radius: 6px 6px 8px 8px;
+}
+
+.admission-info {
+    padding-top: 15px;
+}
+
+#adm-modal .Admn-journey .heading {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 10px;
+    color: #00252F;
+    opacity: 0.6;
+    letter-spacing: 0.5px;
+    margin-left: 21px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+#adm-modal .Admn-journey .heading:hover {
+    color: #f00b48;
+    transition: color 0.9s linear;
+    opacity: 1;
+}
+
+#adm-modal .Admn-journey .title {
+    margin-right: 24px;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    color: #888888;
+
+}
+
+#adm-modal .Admn-journey .time {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FF0042;
+    margin-right: 19px;
+    margin-top: 3px;
+}
+
+#adm-modal #correct-sign img {
+    background-color: #3AB748;
+    padding: 9px 8px;
+    border-radius: 50%;
+
+}
+
+#adm-modal .correct-symbol {
+    padding-top: 0.5rem;
+}
+
+#adm-modal .correct-symbol h6 {
+    Font-size: 12px;
+    Line-height: 14px;
+    font-weight: 500;
+    color: #555555;
+    cursor: pointer;
+}
+
+#adm-modal .correct-symbol p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #616161;
+}
+
+#adm-modal .correct-symbol .icon {
+    position: relative;
+    cursor: pointer;
+}
+
+#adm-modal .icon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #8AA9B53D;
+    width: 1px;
+    height: 50px;
+    left: 50%;
+    top: 29px;
+    bottom: -60px;
+}
+
+#adm-modal .req-admitted .icon {
+    position: relative;
+}
+
+#adm-modal .req-accepted,
+#adm-modal .req-admitted {
+    margin-top: 2rem;
+}
+
+#adm-modal .correct-symbol .admn-request-title {
+    position: relative;
+}
+
+#adm-modal .correct-symbol .admn-request-title img {
+    color: #3762A4;
+}
+
+#adm-modal .correct-symbol .admn-request-title img,
+#adm-modal .correct-symbol .admn-request-title span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 0px;
+}
+
+#adm-modal .correct-symbol .admn-request-title span {
+    color: #777777;
+}
+
+#adm-modal .req-admitted,
+#adm-modal .req-accepted {
+    margin-left: 4.2rem;
+    cursor: pointer;
+}
+
+#adm-modal .req-admitted h6,
+#adm-modal .req-accepted h6 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555555;
+    line-height: 15px;
+}
+
+#adm-modal .req-accepted .icons,
+#adm-modal .req-admitted .icons {
+    box-shadow: 0px 1px 6px 0px #0000001A;
+    cursor: pointer;
+}
+
+#adm-modal .req-admitted .icons {
+    position: relative;
+}
+
+#adm-modal .req-admitted .icons:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #8AA9B53D;
+    width: 1px;
+    height: 40px;
+    bottom: 0px;
+    top: 30px;
+    left: 50%;
+}
+
+.request-time {
+    margin-left: 1.2rem;
+    margin-top: 0.2rem;
+    color: #888888;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.margin-lefts1 {
+    margin-left: 1.3rem;
+}
+
+.margin-lefts2 {
+    margin-left: 3.5rem;
+}
+
+#adm-modal .correct-symbol #doctors-image {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#adm-modal .correct-symbol #doctors-image img:hover {
+    transform: scale(1.2);
+}
+
+/* admission journey end */

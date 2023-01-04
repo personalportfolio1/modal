@@ -1,0 +1,98 @@
+@media screen and (max-width:575px) {
+    .modal {
+
+        width: 350px;
+        max-height: 605px;
+        margin: 2rem;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #adm-modal .patient-div,
+    #adm-modal .patient-info,
+    #adm-modal .bed-info,
+    #adm-modal .payor-info,
+    #adm-modal .bed,
+    #adm-modal .payor,
+    #adm-modal .patient-div .id,
+    #adm-modal .bed-info .id,
+    #adm-modal .payor-info .id {
+        width: 100%;
+    }
+
+    #adm-modal .patient-div {
+        margin-bottom: 10px;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #adm-modal .Admn-journey .heading {
+        font-size: 0.97rem;
+    }
+
+    .margin-lefts2 {
+        margin-left: 2rem;
+    }
+
+    #adm-modal .correct-symbol #doctors-image {
+        position: absolute;
+        top: 20px;
+        cursor: pointer;
+        transition: all 3.5s ease-in-out;
+    }
+
+    .request-time {
+        margin-left: 10px;
+    }
+
+    #adm-modal .req-admitted,
+    #adm-modal .req-accepted {
+        margin-left: 2rem;
+    }
+    #adm-modal .patient-div:hover,
+#adm-modal  .bed-info:hover,
+#adm-modal .payor-info:hover
+{
+    transform:translateY(-10px);
+    cursor:pointer;
+}
+}
+
+@media screen and (max-width:425px) {
+    .modal {
+        width: 300px;
+        --bs-modal-height: auto;
+    }
+
+    #adm-modal .Admn-journey .heading {
+        font-size: 0.7rem;
+    }
+
+    #adm-modal #correct-sign img {
+        padding: 7px 6px;
+    }
+
+    .margin-lefts1 {
+        margin-left: 1rem;
+    }
+
+    .margin-lefts2 {
+        margin-left: 1rem;
+    }
+
+    #adm-modal .req-admitted,
+    #adm-modal .req-accepted {
+        margin-left: 1rem;
+    }
+
+    .request-time {
+        margin-left: 5px;
+    }
+}
